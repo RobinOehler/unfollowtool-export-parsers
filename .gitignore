@@ -1,0 +1,3 @@
+node_modules/
+tests/fixtures/**/*.zip
+.DS_Store

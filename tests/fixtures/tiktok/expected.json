@@ -1,0 +1,483 @@
+[
+  {
+    "file": "json_profile_and_settings.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": "me_myself",
+    "warnings": [],
+    "detectMin": 0.9,
+    "format": "json"
+  },
+  {
+    "file": "json_your_activity.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": "me_myself",
+    "warnings": [],
+    "detectMin": 0.9,
+    "format": "json"
+  },
+  {
+    "file": "json_legacy_activity_user_data.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": "me_myself",
+    "warnings": [],
+    "detectMin": 0.7,
+    "format": "json"
+  },
+  {
+    "file": "json_profile_variant.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.9,
+    "format": "json"
+  },
+  {
+    "file": "json_field_variants.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.9,
+    "format": "json",
+    "dates": {
+      "carol": "2024-03-03T08:55:00.000Z",
+      "dave.k": "2024-03-04T11:15:00.000Z"
+    }
+  },
+  {
+    "file": "json_bom_macos_rezip.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": "me_myself",
+    "warnings": [],
+    "detectMin": 0.9,
+    "format": "json"
+  },
+  {
+    "file": "json_duplicates_case.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 2,
+      "following": 4,
+      "notFollowingBack": 2,
+      "fans": 0,
+      "mutual": 2
+    },
+    "owner": null,
+    "warnings": [],
+    "format": "json"
+  },
+  {
+    "file": "json_null_items.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [
+      "ENTRIES_SKIPPED"
+    ],
+    "format": "json"
+  },
+  {
+    "file": "json_following_null.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 0,
+      "notFollowingBack": 0,
+      "fans": 5,
+      "mutual": 0
+    },
+    "owner": null,
+    "warnings": [
+      "LIST_EMPTY"
+    ],
+    "format": "json"
+  },
+  {
+    "file": "json_fanslist_null.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 0,
+      "following": 6,
+      "notFollowingBack": 6,
+      "fans": 0,
+      "mutual": 0
+    },
+    "owner": null,
+    "warnings": [
+      "LIST_EMPTY"
+    ],
+    "format": "json"
+  },
+  {
+    "file": "json_missing_follower_section.zip",
+    "kind": "zip",
+    "error": {
+      "code": "MISSING_LIST",
+      "params": {
+        "list": "followers"
+      }
+    }
+  },
+  {
+    "file": "json_no_lists.zip",
+    "kind": "zip",
+    "error": {
+      "code": "MISSING_LIST",
+      "params": {
+        "list": "following"
+      }
+    }
+  },
+  {
+    "file": "json_truncated.zip",
+    "kind": "zip",
+    "error": {
+      "code": "CORRUPT_FILE",
+      "params": {
+        "file": "user_data_tiktok.json"
+      }
+    }
+  },
+  {
+    "file": "json_unknown_entry_fields.zip",
+    "kind": "zip",
+    "error": {
+      "code": "CORRUPT_FILE",
+      "params": {
+        "file": "user_data_tiktok.json"
+      }
+    }
+  },
+  {
+    "file": "json_empty_lists.zip",
+    "kind": "zip",
+    "error": {
+      "code": "EMPTY_LISTS",
+      "params": {}
+    }
+  },
+  {
+    "file": "json_multiple_exports.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": "me_myself",
+    "warnings": [
+      "MULTIPLE_EXPORTS"
+    ],
+    "usedFile": "new/user_data_tiktok (1).json",
+    "format": "json"
+  },
+  {
+    "file": "json_xss_usernames.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 0,
+      "following": 8,
+      "notFollowingBack": 8,
+      "fans": 0,
+      "mutual": 0
+    },
+    "owner": null,
+    "warnings": [
+      "LIST_EMPTY"
+    ],
+    "format": "json",
+    "urlFor": [
+      "evil",
+      "ok.user_1"
+    ]
+  },
+  {
+    "file": "txt_profile_and_settings_crlf.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.9,
+    "format": "txt",
+    "dates": {
+      "alice.m": "2023-08-10T06:18:18.000Z"
+    }
+  },
+  {
+    "file": "txt_your_activity.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.85,
+    "format": "txt"
+  },
+  {
+    "file": "txt_legacy_list_names.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.85,
+    "format": "txt"
+  },
+  {
+    "file": "txt_dutch.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.85,
+    "format": "txt"
+  },
+  {
+    "file": "txt_unknown_labels.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.85,
+    "format": "txt"
+  },
+  {
+    "file": "txt_numbered_parts.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.85,
+    "format": "txt"
+  },
+  {
+    "file": "txt_missing_follower_file.zip",
+    "kind": "zip",
+    "error": {
+      "code": "MISSING_LIST",
+      "params": {
+        "list": "followers"
+      }
+    },
+    "detectMin": 0.6
+  },
+  {
+    "file": "txt_empty_follower_file.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 0,
+      "following": 6,
+      "notFollowingBack": 6,
+      "fans": 0,
+      "mutual": 0
+    },
+    "owner": null,
+    "warnings": [
+      "LIST_EMPTY"
+    ],
+    "format": "txt"
+  },
+  {
+    "file": "txt_utf16le.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "format": "txt"
+  },
+  {
+    "file": "txt_garbage.zip",
+    "kind": "zip",
+    "error": {
+      "code": "CORRUPT_FILE",
+      "params": {
+        "file": "Your Activity/Follower.txt"
+      }
+    }
+  },
+  {
+    "file": "mixed_json_corrupt_txt_ok.zip",
+    "kind": "zip",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "format": "txt"
+  },
+  {
+    "file": "raw_user_data_tiktok (1).json",
+    "kind": "file",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": "me_myself",
+    "warnings": [],
+    "format": "json"
+  },
+  {
+    "file": "raw_txt",
+    "kind": "dir",
+    "counts": {
+      "followers": 5,
+      "following": 6,
+      "notFollowingBack": 3,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [],
+    "detectMin": 0.85,
+    "format": "txt"
+  },
+  {
+    "file": "instagram_export.zip",
+    "kind": "zip",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "instagram"
+      }
+    },
+    "detectMax": 0.05
+  },
+  {
+    "file": "instagram_following_raw.json",
+    "kind": "file",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "instagram"
+      }
+    },
+    "detectMax": 0.3
+  },
+  {
+    "file": "facebook_export.zip",
+    "kind": "zip",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "facebook"
+      }
+    },
+    "detectMax": 0.05
+  },
+  {
+    "file": "x_export.zip",
+    "kind": "zip",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "x"
+      }
+    },
+    "detectMax": 0.05
+  },
+  {
+    "file": "unrelated.zip",
+    "kind": "zip",
+    "error": {
+      "code": "NO_RELEVANT_FILES",
+      "params": {}
+    },
+    "detectMax": 0.05
+  }
+]

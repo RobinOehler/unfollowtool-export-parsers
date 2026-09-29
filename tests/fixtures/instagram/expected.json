@@ -1,0 +1,390 @@
+{
+  "ig_2025_json.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "pendingRequests": 2,
+      "recentlyUnfollowed": 1,
+      "receivedRequests": 1,
+      "closeFriends": 1,
+      "blocked": 1,
+      "restricted": 1,
+      "removedSuggestions": 1
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": "demo.user",
+    "warnings": []
+  },
+  "ig_2023_json.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_legacy_2021.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "pendingRequests": 1
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_legacy_2020_connections.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "pendingRequests": 1,
+      "blocked": 1,
+      "restricted": 0,
+      "removedSuggestions": 0,
+      "closeFriends": 0
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_split_parts.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_missing_part.zip": {
+    "lists": {
+      "followers": 5,
+      "following": 10
+    },
+    "views": {
+      "followers": 5,
+      "following": 10,
+      "notFollowingBack": 7,
+      "fans": 2,
+      "mutual": 3
+    },
+    "owner": null,
+    "warnings": [
+      {
+        "code": "MISSING_PARTS",
+        "params": {
+          "list": "followers",
+          "parts": "2"
+        }
+      }
+    ]
+  },
+  "ig_html.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "pendingRequests": 1,
+      "recentlyUnfollowed": 1
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_html_de.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "pendingRequests": 1,
+      "recentlyUnfollowed": 1
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_mixed_json_html.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_nested_macos.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": "demo.user",
+    "warnings": []
+  },
+  "ig_two_exports.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "pendingRequests": 2,
+      "recentlyUnfollowed": 1,
+      "receivedRequests": 1,
+      "closeFriends": 1,
+      "blocked": 1,
+      "restricted": 1,
+      "removedSuggestions": 1
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": [
+      {
+        "code": "MULTIPLE_EXPORTS",
+        "params": {
+          "file": "following.json"
+        }
+      }
+    ]
+  },
+  "ig_windows_backslash.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_unicode_case.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 11
+    },
+    "views": {
+      "followers": 8,
+      "following": 11,
+      "notFollowingBack": 5,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": "demo.user",
+    "warnings": []
+  },
+  "ig_duplicates_multi.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 12
+    },
+    "views": {
+      "followers": 8,
+      "following": 12,
+      "notFollowingBack": 6,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_xss_json.zip": {
+    "lists": {
+      "followers": 1,
+      "following": 6
+    },
+    "views": {
+      "followers": 1,
+      "following": 6,
+      "notFollowingBack": 5,
+      "fans": 0,
+      "mutual": 1
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_xss_html.zip": {
+    "lists": {
+      "followers": 1,
+      "following": 3
+    },
+    "views": {
+      "followers": 1,
+      "following": 3,
+      "notFollowingBack": 2,
+      "fans": 0,
+      "mutual": 1
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_bom.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  },
+  "ig_empty_lists.zip": {
+    "error": "EMPTY_LISTS"
+  },
+  "ig_only_following.zip": {
+    "error": "MISSING_LIST",
+    "params": {
+      "list": "followers",
+      "file": "followers_1.json"
+    }
+  },
+  "ig_only_followers.zip": {
+    "error": "MISSING_LIST",
+    "params": {
+      "list": "following",
+      "file": "following.json"
+    }
+  },
+  "ig_broken_json.zip": {
+    "error": "CORRUPT_FILE",
+    "params": {
+      "file": "following.json"
+    }
+  },
+  "ig_wrong_structure.zip": {
+    "error": "CORRUPT_FILE",
+    "params": {
+      "file": "followers_1.json"
+    }
+  },
+  "ig_no_relevant.zip": {
+    "error": "NO_RELEVANT_FILES"
+  },
+  "ig_broken_optional.zip": {
+    "lists": {
+      "followers": 8,
+      "following": 10,
+      "closeFriends": 1
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": [
+      {
+        "code": "OPTIONAL_FILE_UNREADABLE",
+        "params": {
+          "file": "pending_follow_requests.json"
+        }
+      }
+    ]
+  },
+  "foreign_tiktok.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "tiktok"
+    }
+  },
+  "foreign_x.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "x"
+    }
+  },
+  "foreign_facebook.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "facebook"
+    }
+  },
+  "foreign_facebook_2021.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "facebook"
+    }
+  },
+  "loose/": {
+    "lists": {
+      "followers": 8,
+      "following": 10
+    },
+    "views": {
+      "followers": 8,
+      "following": 10,
+      "notFollowingBack": 4,
+      "fans": 2,
+      "mutual": 6
+    },
+    "owner": null,
+    "warnings": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "friends_v2": [
+    {
+      "name": "Anna Schmidt",
+      "timestamp": 1700000000
+    },
+    {
+      "name": "J\u00c3\u00bcrgen M\u00c3\u00bcller",
+      "timestamp": 1699913600
+    },
+    {
+      "name": "Jos\u00c3\u00a9 \u00c3\u0081lvarez",
+      "timestamp": 1699827200
+    },
+    {
+      "name": "Zo\u00c3\u00ab \u00f0\u009f\u008c\u00b8 Dupont",
+      "timestamp": 1699740800
+    },
+    {
+      "name": "Mark Taylor",
+      "timestamp": 1699654400
+    },
+    {
+      "name": "Ali Y\u00c4\u00b1lmaz",
+      "timestamp": 1699568000
+    },
+    {
+      "name": "\u00c5\u0081ukasz W\u00c3\u00b3jcik",
+      "timestamp": 1699481600
+    },
+    {
+      "name": "John Smith",
+      "timestamp": 1699395200
+    },
+    {
+      "name": "John Smith",
+      "timestamp": 1665440000
+    }
+  ]
+}

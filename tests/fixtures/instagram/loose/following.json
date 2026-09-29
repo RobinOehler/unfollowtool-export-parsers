@@ -1,0 +1,94 @@
+{
+  "relationships_following": [
+    {
+      "title": "anna.schmidt",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/anna.schmidt",
+          "timestamp": 1735732800
+        }
+      ]
+    },
+    {
+      "title": "ben_travel",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/ben_travel",
+          "timestamp": 1735819200
+        }
+      ]
+    },
+    {
+      "title": "carla.photo",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/carla.photo",
+          "timestamp": 1735905600
+        }
+      ]
+    },
+    {
+      "title": "david.k",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/david.k",
+          "timestamp": 1735992000
+        }
+      ]
+    },
+    {
+      "title": "emma_runs",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/emma_runs",
+          "timestamp": 1736078400
+        }
+      ]
+    },
+    {
+      "title": "felix.music",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/felix.music",
+          "timestamp": 1736164800
+        }
+      ]
+    },
+    {
+      "title": "gina.art",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/gina.art",
+          "timestamp": 1736251200
+        }
+      ]
+    },
+    {
+      "title": "hugo_cooks",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/hugo_cooks",
+          "timestamp": 1736337600
+        }
+      ]
+    },
+    {
+      "title": "ivy.designs",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/ivy.designs",
+          "timestamp": 1736424000
+        }
+      ]
+    },
+    {
+      "title": "jonas.dev",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/jonas.dev",
+          "timestamp": 1736510400
+        }
+      ]
+    }
+  ]
+}

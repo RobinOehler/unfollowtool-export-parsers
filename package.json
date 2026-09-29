@@ -1,0 +1,18 @@
+{
+  "name": "unfollowtool-export-parsers",
+  "version": "1.0.0",
+  "description": "Parse the official Instagram, TikTok, X (Twitter) and Facebook data exports into follower/following lists, in the browser or Node. No login, no API, no upload.",
+  "license": "MIT",
+  "author": "Robin Oehler (https://www.unfollowtool.com/about.html)",
+  "homepage": "https://www.unfollowtool.com/",
+  "repository": { "type": "git", "url": "git+https://github.com/RobinOehler/unfollowtool-export-parsers.git" },
+  "keywords": ["instagram", "tiktok", "twitter", "x", "facebook", "data-export", "followers", "unfollowers", "parser", "privacy"],
+  "main": "src/ut-core.js",
+  "files": ["src/", "README.md", "LICENSE"],
+  "scripts": {
+    "fixtures": "node tests/fixtures/instagram/generate.js && node tests/fixtures/tiktok/generate.js && node tests/fixtures/x/generate.js && node tests/fixtures/facebook/generate.js",
+    "test": "npm run fixtures && node --test \"tests/unit/*.test.js\""
+  },
+  "devDependencies": { "jszip": "3.10.1" },
+  "engines": { "node": ">=18" }
+}

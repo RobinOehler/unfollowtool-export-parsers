@@ -1,0 +1,42 @@
+{
+  "following_v3": [
+    {
+      "name": "Anna Schmidt",
+      "timestamp": 1700000000
+    },
+    {
+      "name": "Mark Taylor",
+      "timestamp": 1699996400
+    },
+    {
+      "name": "Some Brand Page",
+      "timestamp": 1699992800
+    },
+    {
+      "name": "Famous Person",
+      "timestamp": 1699989200
+    },
+    {
+      "name": "Local Bakery",
+      "timestamp": 1699985600
+    },
+    {
+      "name": "<img src=x onerror=alert(1)>",
+      "timestamp": 1699982000,
+      "uri": "data:text/html,<script>alert(1)</script>"
+    },
+    {
+      "name": "javascript:alert(1)",
+      "timestamp": 1699978400,
+      "href": "javascript:alert(document.domain)"
+    },
+    {
+      "name": "=HYPERLINK(\"http://evil.example\",\"x\")",
+      "timestamp": 1699974800
+    },
+    {
+      "name": "Random Follower",
+      "timestamp": 1699971200
+    }
+  ]
+}

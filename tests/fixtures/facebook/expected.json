@@ -1,0 +1,476 @@
+{
+  "fb_2025_json.zip": {
+    "detect": "high",
+    "owner": "janedoe",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "receivedRequests": 1,
+      "rejectedRequests": 1,
+      "following": 9,
+      "followers": 4
+    },
+    "warnings": []
+  },
+  "fb_2025_json_macos_rezip.zip": {
+    "detect": "high",
+    "owner": "janedoe",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "receivedRequests": 1,
+      "rejectedRequests": 1,
+      "following": 9,
+      "followers": 4
+    },
+    "warnings": []
+  },
+  "fb_windows_backslash.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "receivedRequests": 1,
+      "rejectedRequests": 1,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_2025_html.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_2021_json.zip": {
+    "detect": "high",
+    "owner": "100004242424242",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "receivedRequests": 1,
+      "following": 9,
+      "followers": 4
+    },
+    "warnings": [
+      {
+        "code": "SKIPPED_UNNAMED",
+        "params": {
+          "count": 1
+        }
+      }
+    ]
+  },
+  "fb_2019_json.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_2019_html.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_2025_html_de.zip": {
+    "detect": "high",
+    "primary": "friends",
+    "views": {
+      "friends": 2
+    }
+  },
+  "fb_multipart.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_followers_v2_objects.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_label_values.zip": {
+    "detect": "high",
+    "primary": "friends",
+    "views": {
+      "friends": 3
+    }
+  },
+  "fb_friends_only.zip": {
+    "detect": "high",
+    "primary": "friends",
+    "views": {
+      "friends": 9,
+      "removedFriends": 1
+    },
+    "warnings": []
+  },
+  "fb_friends_and_following.zip": {
+    "detect": "high",
+    "primary": "friends",
+    "views": {
+      "friends": 9,
+      "following": 9
+    },
+    "warnings": [
+      {
+        "code": "MISSING_LIST",
+        "params": {
+          "list": "followers"
+        }
+      }
+    ]
+  },
+  "fb_following_only.zip": {
+    "detect": "high",
+    "error": {
+      "code": "MISSING_LIST",
+      "params": {
+        "list": "followers"
+      }
+    }
+  },
+  "fb_requests_only.zip": {
+    "detect": "high",
+    "error": {
+      "code": "MISSING_LIST",
+      "params": {
+        "list": "friends"
+      }
+    }
+  },
+  "fb_truncated.zip": {
+    "detect": "high",
+    "error": {
+      "code": "CORRUPT_FILE",
+      "params": {
+        "file": "connections/followers/who_you've_followed.json"
+      }
+    }
+  },
+  "fb_unknown_structure.zip": {
+    "detect": "high",
+    "error": {
+      "code": "CORRUPT_FILE",
+      "params": {
+        "file": "connections/friends/your_friends.json"
+      }
+    }
+  },
+  "fb_empty_lists.zip": {
+    "detect": "high",
+    "error": {
+      "code": "EMPTY_LISTS",
+      "params": {}
+    }
+  },
+  "fb_html_unknown_markup.zip": {
+    "detect": "high",
+    "error": {
+      "code": "HTML_EXPORT_UNSUPPORTED",
+      "params": {}
+    }
+  },
+  "fb_no_connections.zip": {
+    "detect": "medium",
+    "error": {
+      "code": "NO_RELEVANT_FILES",
+      "params": {}
+    }
+  },
+  "fb_mixed_json_html.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "Some Brand Page",
+        "Local Bakery",
+        "<img src=x onerror=alert(1)>",
+        "javascript:alert(1)",
+        "=HYPERLINK(\"http://evil.example\",\"x\")"
+      ],
+      "fans": [
+        "Fan Only"
+      ],
+      "mutual": [
+        "Anna Schmidt",
+        "Famous Person",
+        "Random Follower"
+      ],
+      "friends": 9,
+      "removedFriends": 1,
+      "sentRequests": 1,
+      "receivedRequests": 1,
+      "rejectedRequests": 1,
+      "following": 9,
+      "followers": 4
+    }
+  },
+  "fb_xss.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": [
+        "<img src=x onerror=alert(1)>",
+        "<script>alert(2)</script>",
+        "javascript:alert(3)",
+        "\"><svg onload=alert(4)>",
+        "Right Override"
+      ],
+      "fans": [
+        "Nobody Else"
+      ],
+      "mutual": [],
+      "friends": [
+        "<b onmouseover=alert(6)>Bold</b>"
+      ],
+      "following": 5,
+      "followers": 1
+    }
+  },
+  "wrong_instagram.zip": {
+    "detect": "low",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "instagram"
+      }
+    }
+  },
+  "wrong_instagram_nested.zip": {
+    "detect": "low",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "instagram"
+      }
+    }
+  },
+  "wrong_tiktok.zip": {
+    "detect": "low",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "tiktok"
+      }
+    }
+  },
+  "wrong_x.zip": {
+    "detect": "low",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "x"
+      }
+    }
+  },
+  "not_an_export.zip": {
+    "detect": "none",
+    "error": {
+      "code": "NO_RELEVANT_FILES",
+      "params": {}
+    }
+  },
+  "fb_big_100k.zip": {
+    "detect": "high",
+    "primary": "notFollowingBack",
+    "views": {
+      "notFollowingBack": 49998,
+      "fans": 0,
+      "mutual": 50000,
+      "friends": 2,
+      "following": 100000,
+      "followers": 50000
+    }
+  },
+  "loose/your_friends.json": {
+    "detect": "high",
+    "primary": "friends",
+    "views": {
+      "friends": 9
+    }
+  },
+  "loose/who_you've_followed.json": {
+    "detect": "high",
+    "error": {
+      "code": "MISSING_LIST",
+      "params": {
+        "list": "followers"
+      }
+    }
+  },
+  "loose/following.json": {
+    "detect": "weak",
+    "error": {
+      "code": "WRONG_PLATFORM",
+      "params": {
+        "platform": "instagram"
+      }
+    }
+  }
+}

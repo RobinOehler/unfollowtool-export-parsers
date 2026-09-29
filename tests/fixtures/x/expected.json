@@ -1,0 +1,391 @@
+{
+  "x_basic.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ],
+    "exportedAt": "2026-09-01T09:58:12.345Z"
+  },
+  "x_upper_ext.ZIP": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_multipart.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_multipart_no_manifest.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_missing_part.zip": {
+    "error": "MISSING_LIST",
+    "params": {
+      "list": "followers",
+      "file": "data/follower-part1.js"
+    }
+  },
+  "x_nested_folder.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_macos_rezip.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_data_folder_only.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_root_files.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_backslash_paths.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_bom_crlf.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_dupes_numeric.zip": {
+    "followers": 2,
+    "following": 3,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182"
+    ],
+    "fans": [
+      "3141592653"
+    ],
+    "mutual": [
+      "98765432"
+    ],
+    "warnings": [
+      {
+        "code": "SKIPPED_ENTRIES",
+        "params": {
+          "count": 4
+        }
+      }
+    ]
+  },
+  "x_xss.zip": {
+    "owner": null,
+    "followers": 1,
+    "following": 3,
+    "notFollowingBack": [
+      "1600000000000000042",
+      "271828182"
+    ],
+    "fans": [],
+    "mutual": [
+      "1511223344556677889"
+    ],
+    "warnings": [
+      {
+        "code": "SKIPPED_ENTRIES",
+        "params": {
+          "count": 4
+        }
+      }
+    ]
+  },
+  "x_all_mutual.zip": {
+    "followers": 3,
+    "following": 3,
+    "notFollowingBack": [],
+    "fans": [],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  },
+  "x_following_empty.zip": {
+    "followers": 3,
+    "following": 0,
+    "notFollowingBack": [],
+    "fans": [
+      "1432874569021935616",
+      "98765432",
+      "1203000000000000017"
+    ],
+    "mutual": []
+  },
+  "x_empty_both.zip": {
+    "error": "EMPTY_LISTS"
+  },
+  "x_missing_follower.zip": {
+    "error": "MISSING_LIST",
+    "params": {
+      "list": "followers"
+    }
+  },
+  "x_missing_following.zip": {
+    "error": "MISSING_LIST",
+    "params": {
+      "list": "following"
+    }
+  },
+  "x_corrupt_json.zip": {
+    "error": "CORRUPT_FILE",
+    "params": {
+      "file": "data/follower.js"
+    }
+  },
+  "x_two_exports.zip": {
+    "owner": "sample_owner",
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ],
+    "warnings": [
+      {
+        "code": "MULTIPLE_EXPORTS",
+        "params": {
+          "count": 2,
+          "used": "twitter-2024-12-31-zzzz/data"
+        }
+      }
+    ]
+  },
+  "x_legacy_grailbird.zip": {
+    "error": "NO_RELEVANT_FILES",
+    "params": {
+      "reason": "legacyArchive"
+    }
+  },
+  "wrong_instagram.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "instagram"
+    }
+  },
+  "wrong_tiktok.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "tiktok"
+    }
+  },
+  "wrong_facebook.zip": {
+    "error": "WRONG_PLATFORM",
+    "params": {
+      "platform": "facebook"
+    }
+  },
+  "not_an_export.zip": {
+    "error": "NO_RELEVANT_FILES"
+  },
+  "x_big_100k.zip": {
+    "followers": 60000,
+    "following": 100000,
+    "notFollowingBack": 50000,
+    "fans": 10000,
+    "mutual": 50000
+  },
+  "loose/follower.js+loose/following.js": {
+    "owner": null,
+    "followers": 5,
+    "following": 8,
+    "notFollowingBack": [
+      "1788990011223344556",
+      "271828182",
+      "1600000000000000042",
+      "1111111111111111111",
+      "1234567"
+    ],
+    "fans": [
+      "1432874569021935616",
+      "98765432"
+    ],
+    "mutual": [
+      "1203000000000000017",
+      "1511223344556677889",
+      "3141592653"
+    ]
+  }
+}
