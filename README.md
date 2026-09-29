@@ -1,5 +1,7 @@
 # unfollowtool-export-parsers
 
+[![test](https://github.com/RobinOehler/unfollowtool-export-parsers/actions/workflows/test.yml/badge.svg)](https://github.com/RobinOehler/unfollowtool-export-parsers/actions/workflows/test.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Parsers for the **official data exports** of Instagram, TikTok, X (Twitter) and Facebook. They turn the ZIP a platform gives you into clean follower / following lists — in the browser or in Node, with **no login, no API and no upload**.
 
 These are the parsers behind [UnfollowTool](https://www.unfollowtool.com/), a free tool that shows who doesn't follow you back and who unfollowed you. They are published so anyone can check what the site does with an export, and reuse the format knowledge.
