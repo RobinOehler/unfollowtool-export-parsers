@@ -614,7 +614,10 @@
       // only warns. Without followers there is nothing useful to show (and a comparison would count everyone as lost).
       LISTS.forEach(function (def) {
         if (!def.required || byList[def.id]) return;
-        if (def.id === 'following' && hasFollowers && !s.other) {
+        // Only for a ZIP that really lacks the file: a single loose followers file gets the error (and its
+        // "Add the missing file" button) instead, because one more file gives the full comparison.
+        var fromZip = (fileSet.sourceNames || []).some(function (n) { return /\.zip$/i.test(n); });
+        if (def.id === 'following' && hasFollowers && !s.other && fromZip) {
           warnings.push({ code: 'LIST_MISSING', params: { list: 'following', file: def.file } });
           return;
         }
