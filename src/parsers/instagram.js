@@ -610,8 +610,15 @@
       used.push(legacyPath);
     } else {
       if (!hasFollowers && !hasFollowing) missing('NO_RELEVANT_FILES');
+      // Followers alone still answer "who unfollowed me" (with a saved earlier result), so a missing following list
+      // only warns. Without followers there is nothing useful to show (and a comparison would count everyone as lost).
       LISTS.forEach(function (def) {
-        if (def.required && !byList[def.id]) missing('MISSING_LIST', { list: def.id, file: def.file });
+        if (!def.required || byList[def.id]) return;
+        if (def.id === 'following' && hasFollowers && !s.other) {
+          warnings.push({ code: 'LIST_MISSING', params: { list: 'following', file: def.file } });
+          return;
+        }
+        missing('MISSING_LIST', { list: def.id, file: def.file });
       });
 
       for (var i = 0; i < LISTS.length; i++) {
@@ -647,7 +654,7 @@
     var following = lists.following || [];
     if (!followers.length && !following.length) fail('EMPTY_LISTS');
     ['followers', 'following'].forEach(function (list) {
-      if (!lists[list].length) warnings.push({ code: 'LIST_EMPTY', params: { list: list } });
+      if (lists[list] && !lists[list].length) warnings.push({ code: 'LIST_EMPTY', params: { list: list } });
     });
 
     return {
@@ -698,7 +705,10 @@
     });
     var fans = followers.filter(function (e) { return !followingKeys.has(e.key); });
 
-    var out = [
+    // Partial export (following list missing, see parse): only the followers can be shown.
+    var out = !lists.following && lists.followers ? [
+      { id: 'followers', entries: followers.slice(), primary: true, dateKey: 'followsYouSince' }
+    ] : [
       { id: 'notFollowingBack', entries: notFollowingBack, primary: true, dateKey: 'followedSince' },
       { id: 'fans', entries: fans, dateKey: 'followsYouSince' },
       { id: 'mutual', entries: mutual.sort(byNewest), dateKey: 'friendsSince' },

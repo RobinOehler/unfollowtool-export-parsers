@@ -160,7 +160,10 @@ test('errors: empty upload, unsupported file, corrupt ZIP, fake .zip, truncated 
   await rejectsCode(UT.files.fromFileList([new File(['<html>error</html>'], 'download.zip')]), 'CORRUPT_ZIP');
 
   const good = new Uint8Array(await (await zipFile('t.zip', { 'a.json': '{"a":1}'.repeat(500) })).arrayBuffer());
-  await rejectsCode(UT.files.fromFileList([new File([good.slice(0, good.length - 40)], 't.zip')]), 'CORRUPT_ZIP');
+  // Only the end (central directory) is missing: the entry itself arrived, so the rescue reader returns it.
+  const rescued = await UT.files.fromFileList([new File([good.slice(0, good.length - 40)], 't.zip')]);
+  assert.deepEqual(rescued.paths, ['a.json']);
+  assert.deepEqual(rescued.recovered, ['t.zip']);
   await rejectsCode(UT.files.fromFileList([new File([good.slice(0, 60)], 't.zip')]), 'CORRUPT_ZIP');
 });
 
@@ -281,4 +284,40 @@ test('largeUploadBytes warns only on mobile above 1.5 GB', () => {
   assert.equal(UT.files.largeUploadBytes([{ size: 1.4 * GB }], true), 0);
   assert.equal(UT.files.largeUploadBytes([], true), 0);
   assert.equal(typeof UT.files.isMobileDevice(), 'boolean');
+});
+
+/* ------------------------------------------------------------------ rescue of cut-off archives */
+
+async function cutZip(name, entries, keepFraction) {
+  const zip = new JSZip();
+  for (const [p, content] of Object.entries(entries)) zip.file(p, content);
+  const bytes = await zip.generateAsync({ type: 'uint8array', compression: 'DEFLATE' });
+  return new File([bytes.subarray(0, Math.floor(bytes.length * keepFraction))], name);
+}
+
+// Follower files first, then a large incompressible "media" block, as in real Instagram exports.
+const BIG_MEDIA = new Uint8Array(200000).map((_, i) => (i * 2654435761) >>> 24);
+const IG_THEN_MEDIA = {
+  'connections/followers_and_following/followers_1.json': '[{"string_list_data":[{"value":"a"}]}]',
+  'connections/followers_and_following/following.json': '{"relationships_following":[]}',
+  'media/posts/202401/video.mp4': BIG_MEDIA
+};
+
+test('a cut-off download still yields the entries that arrived completely (rescue reader)', async () => {
+  const fs = await UT.files.fromFileList([await cutZip('instagram-cut.zip', IG_THEN_MEDIA, 0.6)]);
+  assert.deepEqual(fs.paths, [
+    'connections/followers_and_following/followers_1.json',
+    'connections/followers_and_following/following.json'
+  ]);
+  assert.equal(await fs.read('connections/followers_and_following/following.json'), '{"relationships_following":[]}');
+  assert.deepEqual(fs.recovered, ['instagram-cut.zip']);
+});
+
+test('an intact ZIP is never marked as recovered', async () => {
+  const fs = await UT.files.fromFileList([await cutZip('instagram-ok.zip', IG_THEN_MEDIA, 1)]);
+  assert.deepEqual(fs.recovered, []);
+});
+
+test('a download cut off before any complete entry stays CORRUPT_ZIP', async () => {
+  await rejectsCode(UT.files.fromFileList([await cutZip('instagram-tiny.zip', { 'media/big.mp4': BIG_MEDIA }, 0.3)]), 'CORRUPT_ZIP');
 });

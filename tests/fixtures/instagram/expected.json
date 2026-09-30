@@ -304,11 +304,36 @@
     }
   },
   "ig_only_followers.zip": {
-    "error": "MISSING_LIST",
-    "params": {
-      "list": "following",
-      "file": "following.json"
-    }
+    "lists": {
+      "followers": 8,
+      "pendingRequests": 2,
+      "recentlyUnfollowed": 1,
+      "receivedRequests": 1,
+      "closeFriends": 1,
+      "blocked": 1,
+      "restricted": 1,
+      "removedSuggestions": 1
+    },
+    "views": {
+      "followers": 8,
+      "pendingRequests": 2,
+      "recentlyUnfollowed": 1,
+      "receivedRequests": 1,
+      "closeFriends": 1,
+      "restricted": 1,
+      "blocked": 1,
+      "removedSuggestions": 1
+    },
+    "owner": null,
+    "warnings": [
+      {
+        "code": "LIST_MISSING",
+        "params": {
+          "list": "following",
+          "file": "following.json"
+        }
+      }
+    ]
   },
   "ig_broken_json.zip": {
     "error": "CORRUPT_FILE",

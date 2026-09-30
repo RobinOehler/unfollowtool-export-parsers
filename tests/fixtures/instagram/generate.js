@@ -319,8 +319,13 @@ async function main() {
     { error: 'EMPTY_LISTS' });
   await writeZip('ig_only_following.zip', { [FF + 'following.json']: followingFile(FOLLOWING) },
     { error: 'MISSING_LIST', params: { list: 'followers', file: 'followers_1.json' } });
-  await writeZip('ig_only_followers.zip', Object.assign({ [FF + 'followers_1.json']: followersFile(FOLLOWERS) }, optionalLists()),
-    { error: 'MISSING_LIST', params: { list: 'following', file: 'following.json' } });
+  // Followers without following: a partial result (followers + optional lists) with a LIST_MISSING warning.
+  await writeZip('ig_only_followers.zip', Object.assign({ [FF + 'followers_1.json']: followersFile(FOLLOWERS) }, optionalLists()), {
+    lists: { followers: 8, pendingRequests: 2, recentlyUnfollowed: 1, receivedRequests: 1, closeFriends: 1, blocked: 1, restricted: 1, removedSuggestions: 1 },
+    views: { followers: 8, pendingRequests: 2, recentlyUnfollowed: 1, receivedRequests: 1, closeFriends: 1, restricted: 1, blocked: 1, removedSuggestions: 1 },
+    owner: null,
+    warnings: [{ code: 'LIST_MISSING', params: { list: 'following', file: 'following.json' } }]
+  });
   await writeZip('ig_broken_json.zip', {
     [FF + 'followers_1.json']: followersFile(FOLLOWERS),
     [FF + 'following.json']: '{\n  "relationships_following": [\n    {\n      "title": "anna.schmidt",\n      "string_list_'

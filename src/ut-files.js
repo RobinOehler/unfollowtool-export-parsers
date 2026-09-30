@@ -309,8 +309,66 @@
     return entries;
   }
 
-  /** Lists a ZIP's entries, natively when possible and via JSZip otherwise. */
+  /**
+   * Rescue for archives whose end is missing (typically an interrupted download of a big export with media): the
+   * central directory at the end is gone, but the local file headers at the start are intact. Walks them from the
+   * front and returns every entry that arrived completely. Only used after the normal reader failed, so intact ZIPs
+   * never pay for it. Stops at the first entry that was cut off or whose size is only known after its data (flag 8).
+   */
+  async function openZipSalvage(blob, label) {
+    var size = blob.size, entries = [], off = 0;
+    while (off + 30 <= size && entries.length < 200000) {
+      var head = await readBytes(blob, off, Math.min(size, off + 30 + 1024), label);
+      if (head.length < 30) break;
+      var hv = view(head);
+      if (hv.getUint32(0, true) !== SIG_LOCAL) break;
+      var flags = hv.getUint16(6, true), method = hv.getUint16(8, true);
+      var compSize = hv.getUint32(18, true), uncompSize = hv.getUint32(22, true);
+      var nameLen = hv.getUint16(26, true), extraLen = hv.getUint16(28, true);
+      if (flags & 8) break;
+      if (30 + nameLen + extraLen > head.length) {
+        head = await readBytes(blob, off, off + 30 + nameLen + extraLen, label);
+        if (head.length < 30 + nameLen + extraLen) break;
+        hv = view(head);
+      }
+      var name = null, x = 30 + nameLen, xEnd = x + extraLen;
+      while (x + 4 <= xEnd) {
+        var id = hv.getUint16(x, true), len = hv.getUint16(x + 2, true), d = x + 4;
+        if (id === 0x0001) {
+          if (uncompSize === 0xFFFFFFFF && d + 8 <= x + 4 + len) { uncompSize = Number(hv.getBigUint64(d, true)); d += 8; }
+          if (compSize === 0xFFFFFFFF && d + 8 <= x + 4 + len) { compSize = Number(hv.getBigUint64(d, true)); }
+        } else if (id === 0x7075 && len > 5) {
+          name = new TextDecoder('utf-8').decode(head.subarray(d + 5, x + 4 + len));
+        }
+        x += 4 + len;
+      }
+      if (name === null) name = decodeName(head.subarray(30, 30 + nameLen), (flags & 0x800) !== 0);
+      var dataEnd = off + 30 + nameLen + extraLen + compSize;
+      if (dataEnd > size) break; // this entry was cut off: everything after it is missing too
+      entries.push(nativeEntry(blob, label, {
+        name: name, flags: flags, method: method, compSize: compSize, size: uncompSize, offset: off
+      }));
+      off = dataEnd;
+    }
+    return entries;
+  }
+
+  /** Lists a ZIP's entries; an archive the readers reject is handed to the rescue reader (openZipSalvage). */
   async function openZip(blob, label, backend) {
+    try {
+      return await openZipIntact(blob, label, backend);
+    } catch (err) {
+      if (!UT.isUTError(err) || err.code !== 'CORRUPT_ZIP' || !nativeZipSupported()) throw err;
+      var rescued = null;
+      try { rescued = await openZipSalvage(blob, label); } catch (e) { rescued = null; }
+      if (!rescued || !rescued.some(function (e) { return !e.dir; })) throw err;
+      rescued.salvaged = true;
+      return rescued;
+    }
+  }
+
+  /** Lists a ZIP's entries, natively when possible and via JSZip otherwise. */
+  async function openZipIntact(blob, label, backend) {
     if (backend === 'jszip' || !nativeZipSupported()) return openZipJSZip(blob, label);
     try {
       return await openZipNative(blob, label);
@@ -330,6 +388,7 @@
     var map = new Map();
     var sources = [];
     var skipped = [];
+    var recovered = []; // ZIPs read by the rescue reader (their end was missing)
     var totalBytes = 0;
 
     /** Adds a file; a same-path/same-size duplicate (same export uploaded twice) is ignored. */
@@ -351,6 +410,7 @@
         sourceNames: sources.slice(),
         totalBytes: totalBytes,
         skipped: skipped.slice(),
+        recovered: recovered.slice(),
         has: function (re) {
           return paths.filter(function (p) { re.lastIndex = 0; return re.test(p); });
         },
@@ -370,6 +430,7 @@
       add: add, build: build,
       source: function (name, size) { sources.push(name); totalBytes += size; },
       skip: function (name) { skipped.push(name); },
+      recover: function (name) { recovered.push(name); },
       get size() { return map.size; }
     };
   }
@@ -388,6 +449,7 @@
   async function addZip(set, blob, label, sourceName, nested, backend, onProgress) {
     onProgress({ stage: 'zip', name: label });
     var entries = await openZip(blob, label, backend);
+    if (entries.salvaged) set.recover(label);
     for (var i = 0; i < entries.length; i++) {
       var e = entries[i];
       if (e.dir) continue;
